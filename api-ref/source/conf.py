@@ -93,7 +93,7 @@ html_static_path = ['_static']
 
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
-('index',
+    ('index',
      'kms-api-ref.tex',
      u'Key Management Service - API Reference',
      u'OpenTelekomCloud', 'manual'),
