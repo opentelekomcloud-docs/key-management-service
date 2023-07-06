@@ -5,8 +5,8 @@ Key Management Service - User Guide
 .. toctree::
    :maxdepth: 1
 
-   about_kms/index
-   management/index
+   service_overview/index
+   user_guide/index
    faqs/index
    change_history
    glossary
