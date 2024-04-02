@@ -8,6 +8,20 @@ Change History
 +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Release Date                      | Description                                                                                                                                                   |
 +===================================+===============================================================================================================================================================+
+| 2024-03-25                        | This is the sixteenth official release.                                                                                                                       |
+|                                   |                                                                                                                                                               |
+|                                   | -  Optimized the description of the parameter **grantee_principal_type** in section "Creating a Grant".                                                       |
+|                                   | -  Added an example of the **message_type** in section "Signing Data".                                                                                        |
++-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2023-11-29                        | This is the fifteenth official release.                                                                                                                       |
+|                                   |                                                                                                                                                               |
+|                                   | Modified the description of some API request parameters in section "API Description".                                                                         |
++-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2023-10-20                        | This is the fourteenth official release.                                                                                                                      |
+|                                   |                                                                                                                                                               |
+|                                   | -  Added the section "Signing Data".                                                                                                                          |
+|                                   | -  Added the section "Authenticating a Signature".                                                                                                            |
++-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2022-09-30                        | This issue is the thirteenth official release.                                                                                                                |
 |                                   |                                                                                                                                                               |
 |                                   | Optimized descriptions in sections "Permissions Policies and Supported Actions".                                                                              |
@@ -67,7 +81,7 @@ Change History
 |                                   | -  Added the section "Revoking a Grant".                                                                                                                      |
 |                                   | -  Added the section "Retiring a Grant".                                                                                                                      |
 |                                   | -  Added the section "Querying Grants on a CMK".                                                                                                              |
-|                                   | -  Added the section "Querying Grants That Can Be Retired".                                                                                                   |
+|                                   | -  Added the section "Querying Grants that Can Be Retired".                                                                                                   |
 |                                   | -  Optimized request parameter description in the section "Creating a CMK".                                                                                   |
 |                                   | -  Optimized request and response parameter description in the section "Querying the List of CMKs".                                                           |
 |                                   | -  Optimized response parameter description in the section "Querying the Information About a CMK".                                                            |

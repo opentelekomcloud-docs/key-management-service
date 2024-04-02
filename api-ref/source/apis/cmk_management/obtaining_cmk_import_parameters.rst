@@ -43,7 +43,7 @@ Requests
    |                    |                 |                 |                                                                                                                            |
    |                    |                 |                 | Example: 0d0466b0-e727-4d9c-b35d-f84bb474a37f                                                                              |
    +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+
-   | wrapping_algorithm | Yes             | String          | Encryption algorithm for CMK material. The following values are enumerated:                                                |
+   | wrapping_algorithm | Yes             | String          | Cryptographic algorithm for CMK material. The following values are enumerated:                                             |
    |                    |                 |                 |                                                                                                                            |
    |                    |                 |                 | -  RSAES_PKCS1_V1_5                                                                                                        |
    |                    |                 |                 | -  RSAES_OAEP_SHA_1                                                                                                        |
@@ -74,7 +74,7 @@ Responses
 Examples
 --------
 
-The following example describes how to obtain the imported parameter of a CMK (ID: **bb6a3d22-dc93-47ac-b5bd-88df7ad35f1e**; encryption algorithm: **RSAES_OAEP_SHA_1**).
+The following example describes how to obtain the imported parameter of a CMK (ID: **bb6a3d22-dc93-47ac-b5bd-88df7ad35f1e**; algorithm: **RSAES_OAEP_SHA_1**).
 
 -  Example request
 
