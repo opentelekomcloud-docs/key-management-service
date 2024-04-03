@@ -1,15 +1,15 @@
-:original_name: dew_02_0308.html
+:original_name: kms_02_0308.html
 
-.. _dew_02_0308:
+.. _kms_02_0308:
 
 Introduction
 ============
 
-This chapter describes fine-grained permissions management for your KMS. If your account does not need individual IAM users, then you may skip over this chapter.
+This chapter describes fine-grained permissions management for your KMS. If your account does not need individual IAM users, you may skip over this chapter.
 
 By default, new IAM users do not have permissions assigned. You need to add a user to one or more groups, and attach permissions policies or roles to these groups. Users inherit permissions from the groups to which they are added and can perform specified operations on cloud services based on the permissions.
 
-You can grant users permissions by using roles and policies. Roles are a type of coarse-grained authorization mechanism that defines permissions related to user responsibilities. Policies define API-based permissions for operations on specific resources under certain conditions, allowing for more fine-grained, secure access control of cloud resources.
+You can grant permissions to users by using roles and policies. Roles are a type of coarse-grained authorization mechanism that defines permissions related to user responsibilities. Policies define API-based permissions for operations on specific resources under certain conditions, allowing for more fine-grained, secure access control of cloud resources.
 
 .. note::
 
@@ -34,4 +34,4 @@ You can use system-defined policies provided in IAM, or create custom policies t
 
 KMS supports the following actions that can be defined in custom policies:
 
-:ref:`Manage keys <dew_02_0309>`, such as creating keys and querying keys.
+:ref:`Manage keys <kms_02_0309>`, such as creating keys and querying keys.
