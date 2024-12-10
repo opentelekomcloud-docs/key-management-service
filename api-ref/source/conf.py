@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'kms-api-ref.tex',
-     u'Key Management Service - API Reference',
+    u'Key Management Service - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 
