@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'kms-umn.tex',
-     u'Key Management Service - User Guide',
+    u'Key Management Service - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
