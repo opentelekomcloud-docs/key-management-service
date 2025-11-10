@@ -9,4 +9,3 @@ Key Management Service - User Guide
    user_guide/index
    faqs/index
    change_history
-   glossary
