@@ -1,6 +1,6 @@
-:original_name: kms_01_0055.html
+:original_name: kms_01_0101.html
 
-.. _kms_01_0055:
+.. _kms_01_0101:
 
 What Are the Differences Between a Custom Key and a Default Key?
 ================================================================

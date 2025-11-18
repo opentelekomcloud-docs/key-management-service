@@ -1,6 +1,6 @@
-:original_name: kms_01_0054.html
+:original_name: kms_01_0106.html
 
-.. _kms_01_0054:
+.. _kms_01_0106:
 
 What Are the Benefits of Envelope Encryption?
 =============================================

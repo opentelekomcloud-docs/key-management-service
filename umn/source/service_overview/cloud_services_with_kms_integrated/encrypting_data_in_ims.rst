@@ -1,13 +1,13 @@
-:original_name: kms_01_0009.html
+:original_name: dew_01_0009.html
 
-.. _kms_01_0009:
+.. _dew_01_0009:
 
 Encrypting Data in IMS
 ======================
 
--  When uploading an image file to Image Management Service (IMS), you can choose to encrypt the image file using a key provided by KMS to protect the file. :ref:`Figure 1 <kms_01_0009__fig144761027111615>` describes details. For details, see the *Image Management Service User Guide*.
+-  When uploading an image file to Image Management Service (IMS), you can choose to encrypt the image file using a key provided by KMS to protect the file. :ref:`Figure 1 <dew_01_0009__en-us_topic_0112947622_fig144761027111615>` describes details. For details, see the *Image Management Service User Guide*.
 
-   .. _kms_01_0009__fig144761027111615:
+   .. _dew_01_0009__en-us_topic_0112947622_fig144761027111615:
 
    .. figure:: /_static/images/en-us_image_0000001628879300.png
       :alt: **Figure 1** Encrypting data in IMS
