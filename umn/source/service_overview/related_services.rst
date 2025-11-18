@@ -1,6 +1,6 @@
-:original_name: kms_01_0017.html
+:original_name: kms_01_0016.html
 
-.. _kms_01_0017:
+.. _kms_01_0016:
 
 Related Services
 ================
@@ -28,7 +28,12 @@ Scalable File Service (SFS) provides high-performance file storage (NAS) that ca
 RDS
 ---
 
-Relational Database Service (RDS) is a relational database that is reliable, scalable, easy to manage, and immediately ready for use. KMS provides central management and control capabilities of CMKs for RDS. It is used for disk encryption in relational databases.
+Relational Database Service (RDS) is a cloud relational database that is reliable, scalable, easy to manage, and immediately ready for use. KMS provides central management and control capabilities of CMKs for RDS. It is used for disk encryption in RDS.
+
+DDS
+---
+
+Document Database Service (DDS) is a MongoDB-compatible database service that is secure, highly available, reliable, scalable, and easy to use. It provides DB instance creation, scaling, redundancy, backup, restoration, monitoring, and alarm reporting functions with just a few clicks on the DDS console. KMS provides central management and control capabilities of CMKs for DDS. It is used for disk encryption in DDS.
 
 CTS
 ---
@@ -40,59 +45,59 @@ Cloud Trace Service (CTS) provides you with a history of KMS operations. After t
    +---------------------------------+---------------+-------------------------------+
    | Operation                       | Resource Type | Trace Name                    |
    +=================================+===============+===============================+
-   | Create a key                    | cmk           | createKey                     |
+   | Create a key                    | CMK           | createKey                     |
    +---------------------------------+---------------+-------------------------------+
-   | Create a DEK                    | cmk           | createDataKey                 |
+   | Create a DEK                    | CMK           | createDataKey                 |
    +---------------------------------+---------------+-------------------------------+
-   | Create a plaintext-free DEK     | cmk           | createDataKeyWithoutPlaintext |
+   | Create a plaintext-free DEK     | CMK           | createDataKeyWithoutPlaintext |
    +---------------------------------+---------------+-------------------------------+
-   | Enable a key                    | cmk           | enableKey                     |
+   | Enable a key                    | CMK           | enableKey                     |
    +---------------------------------+---------------+-------------------------------+
-   | Disable a key                   | cmk           | disableKey                    |
+   | Disable a key                   | CMK           | disableKey                    |
    +---------------------------------+---------------+-------------------------------+
-   | Encrypt a DEK                   | cmk           | encryptDatakey                |
+   | Encrypt a DEK                   | CMK           | encryptDatakey                |
    +---------------------------------+---------------+-------------------------------+
-   | Decrypt a DEK                   | cmk           | decryptDatakey                |
+   | Decrypt a DEK                   | CMK           | decryptDatakey                |
    +---------------------------------+---------------+-------------------------------+
-   | Schedule key deletion           | cmk           | scheduleKeyDeletion           |
+   | Schedule key deletion           | CMK           | scheduleKeyDeletion           |
    +---------------------------------+---------------+-------------------------------+
-   | Cancel scheduled key deletion   | cmk           | cancelKeyDeletion             |
+   | Cancel scheduled key deletion   | CMK           | cancelKeyDeletion             |
    +---------------------------------+---------------+-------------------------------+
-   | Generate random numbers         | rng           | genRandom                     |
+   | Generate random numbers         | RNG           | genRandom                     |
    +---------------------------------+---------------+-------------------------------+
-   | Modify a key alias              | cmk           | updateKeyAlias                |
+   | Modify a key alias              | CMK           | updateKeyAlias                |
    +---------------------------------+---------------+-------------------------------+
-   | Modify key description          | cmk           | updateKeyDescription          |
+   | Modify key description          | CMK           | updateKeyDescription          |
    +---------------------------------+---------------+-------------------------------+
-   | Prompt risks about CMK deletion | cmk           | deleteKeyRiskTips             |
+   | Prompt risks about CMK deletion | CMK           | deleteKeyRiskTips             |
    +---------------------------------+---------------+-------------------------------+
-   | Import key materials            | cmk           | importKeyMaterial             |
+   | Import key materials            | CMK           | importKeyMaterial             |
    +---------------------------------+---------------+-------------------------------+
-   | Delete key materials            | cmk           | deleteImportedKeyMaterial     |
+   | Delete key materials            | CMK           | deleteImportedKeyMaterial     |
    +---------------------------------+---------------+-------------------------------+
-   | Create a grant                  | cmk           | createGrant                   |
+   | Create a grant                  | CMK           | createGrant                   |
    +---------------------------------+---------------+-------------------------------+
-   | Retire a grant                  | cmk           | retireGrant                   |
+   | Retire a grant                  | CMK           | retireGrant                   |
    +---------------------------------+---------------+-------------------------------+
-   | Revoke a grant                  | cmk           | revokeGrant                   |
+   | Revoke a grant                  | CMK           | revokeGrant                   |
    +---------------------------------+---------------+-------------------------------+
-   | Encrypt data                    | cmk           | encryptData                   |
+   | Encrypt data                    | CMK           | encryptData                   |
    +---------------------------------+---------------+-------------------------------+
-   | Decrypt data                    | cmk           | decryptData                   |
+   | Decrypt data                    | CMK           | decryptData                   |
    +---------------------------------+---------------+-------------------------------+
-   | Add a tag                       | cmk           | dealUnifiedTags               |
+   | Add a tag                       | CMK           | dealUnifiedTags               |
    +---------------------------------+---------------+-------------------------------+
-   | Delete a tag                    | cmk           | dealUnifiedTags               |
+   | Delete a tag                    | CMK           | dealUnifiedTags               |
    +---------------------------------+---------------+-------------------------------+
-   | Add tags in batches             | cmk           | dealUnifiedTags               |
+   | Add tags in batches             | CMK           | dealUnifiedTags               |
    +---------------------------------+---------------+-------------------------------+
-   | Delete tags in batches          | cmk           | dealUnifiedTags               |
+   | Delete tags in batches          | CMK           | dealUnifiedTags               |
    +---------------------------------+---------------+-------------------------------+
-   | Enable key rotation             | cmk           | enableKeyRotation             |
+   | Enable key rotation             | CMK           | enableKeyRotation             |
    +---------------------------------+---------------+-------------------------------+
-   | Modify key rotation interval    | cmk           | updateKeyRotationInterval     |
+   | Modify key rotation interval    | CMK           | updateKeyRotationInterval     |
    +---------------------------------+---------------+-------------------------------+
-   | Disable key rotation            | cmk           | disableKeyRotation            |
+   | Disable key rotation            | CMK           | disableKeyRotation            |
    +---------------------------------+---------------+-------------------------------+
 
 IAM

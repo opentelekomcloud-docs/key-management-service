@@ -1,13 +1,13 @@
-:original_name: kms_01_0018.html
+:original_name: kms_01_9999.html
 
-.. _kms_01_0018:
+.. _kms_01_9999:
 
 KMS Permission Management
 =========================
 
 If you want to assign different access permissions to employees in an enterprise for the KMS resources purchased on the cloud platform, you can use Identity and Access Management (IAM) to perform refined permission management. IAM provides identity authentication, permissions management, and access control, helping you secure access to your resources.
 
-With IAM, you can use your account to create IAM users for your employees, and grant permissions to control their access to specific resource types. For example, if you have software developers and you want to assign them the permission to access KMS but not to delete KMS or its resources, then you can create an IAM policy to assign the developers the permission to access KMS but prevent them from deleting KMS related data.
+With IAM, you can use your account to create IAM users for your employees, and grant permissions to control their access to specific resource types. For example, some software developers in your enterprise need to use KMS resources but must not delete them or perform any high-risk operations. To achieve this result, you can create IAM users for the software developers and grant them only the permissions required for using KMS resources.
 
 If the system account has met your requirements and you do not need to create an independent IAM user for permission control, then you can skip this section. This will not affect other functions of KMS.
 
@@ -23,9 +23,9 @@ You can grant users permissions by using roles and policies.
 -  Roles: A type of coarse-grained authorization mechanism that defines permissions related to user responsibilities. This mechanism provides only a limited number of service-level roles for authorization. When using roles to grant permissions, you must also assign other roles that the permissions depend on to take effect. However, roles are not an ideal choice for fine-grained authorization and secure access control.
 -  Policies: A type of fine-grained authorization mechanism that defines permissions required to perform operations on specific cloud resources under certain conditions. This mechanism allows for more flexible policy-based authorization, meeting requirements for secure access control. For example, you can grant KMS users only the permissions for managing a certain type of cloud servers. Most policies contain permissions for specific APIs, and permissions are defined using API actions.
 
-For more information, see :ref:`Table 1 <kms_01_0018__table123532558115>`.
+For details, see :ref:`Table 1 <kms_01_9999__en-us_topic_0169425412_table123532558115>`.
 
-.. _kms_01_0018__table123532558115:
+.. _kms_01_9999__en-us_topic_0169425412_table123532558115:
 
 .. table:: **Table 1** KMS permissions
 
@@ -41,9 +41,9 @@ For more information, see :ref:`Table 1 <kms_01_0018__table123532558115>`.
    | KMS CMKReadOnlyAccess | Read-only permission for encryption keys         | Policy |
    +-----------------------+--------------------------------------------------+--------+
 
-:ref:`Table 2 <kms_01_0018__table635410553117>` lists the common operations supported by each system-defined permission of KMS. Select the permissions as needed.
+:ref:`Table 2 <kms_01_9999__en-us_topic_0169425412_table635410553117>` lists the common operations supported by each system-defined permission of KMS. Select the permissions as needed.
 
-.. _kms_01_0018__table635410553117:
+.. _kms_01_9999__en-us_topic_0169425412_table635410553117:
 
 .. table:: **Table 2** Common operations supported by each system-defined policy or role
 
@@ -122,9 +122,3 @@ For more information, see :ref:`Table 1 <kms_01_0018__table123532558115>`.
    +---------------------------------------+-------------------+-------------------+
    | Query quotas                          | Y                 | Y                 |
    +---------------------------------------+-------------------+-------------------+
-
-Related Links
--------------
-
--  Two types of permission policies are provided by default: default policies and custom policies. Default policies are pre-defined by IAM and cannot be modified. If default policies do not meet your requirements, you can create custom policies for fine-grained permission control.
--  Configure permission policies for a user group and add users to the group so that these users can obtain operation permissions defined in the policies.
