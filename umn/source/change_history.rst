@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001682248672.html
+:original_name: kms_01_0043.html
 
-.. _en-us_topic_0000001682248672:
+.. _kms_01_0043:
 
 Change History
 ==============
@@ -133,31 +133,31 @@ Change History
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2017-11-30                        | This is the seventh official release.                                                                                                                                                                 |
 |                                   |                                                                                                                                                                                                       |
-|                                   | Updated a screenshot in section "Scheduling the Deletion of One or Multiple CMKs".                                                                                                                    |
+|                                   | Updated a screenshot in section "Scheduling the Deletion of One or Multiple CMKs."                                                                                                                    |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2017-10-30                        | This is the sixth official release.                                                                                                                                                                   |
 |                                   |                                                                                                                                                                                                       |
-|                                   | -  Added operations creating a grant, retiring a grant, and revoking a grant to the table of supported KMS operations in section "Related Services".                                                  |
-|                                   | -  Added section "Configuring SMN".                                                                                                                                                                   |
-|                                   | -  Added section "Creating a Grant".                                                                                                                                                                  |
-|                                   | -  Added section "Querying a Grant".                                                                                                                                                                  |
-|                                   | -  Added section "Revoking a Grant".                                                                                                                                                                  |
+|                                   | -  Added operations creating a grant, retiring a grant, and revoking a grant to the table of supported KMS operations in section "Related Services."                                                  |
+|                                   | -  Added section "Configuring SMN."                                                                                                                                                                   |
+|                                   | -  Added section "Creating a Grant."                                                                                                                                                                  |
+|                                   | -  Added section "Querying a Grant."                                                                                                                                                                  |
+|                                   | -  Added section "Revoking a Grant."                                                                                                                                                                  |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2017-08-30                        | This is the fifth official release.                                                                                                                                                                   |
 |                                   |                                                                                                                                                                                                       |
-|                                   | -  Added section "Project".                                                                                                                                                                           |
+|                                   | -  Added section "Project."                                                                                                                                                                           |
 |                                   | -  Added the step of selecting a project.                                                                                                                                                             |
 |                                   | -  Updated some screenshots.                                                                                                                                                                          |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2017-06-30                        | This is the fourth official release.                                                                                                                                                                  |
 |                                   |                                                                                                                                                                                                       |
-|                                   | -  Added operations changing the alias of a CMK, changing the description of a CMK, and prompting risks about CMK deletion to table "KMS operations that CTS supports" in section "Related Services". |
-|                                   | -  Added section "Changing the Alias and Description of a CMK".                                                                                                                                       |
+|                                   | -  Added operations changing the alias of a CMK, changing the description of a CMK, and prompting risks about CMK deletion to table "KMS operations that CTS supports" in section "Related Services." |
+|                                   | -  Added section "Changing the Alias and Description of a CMK."                                                                                                                                       |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2017-03-31                        | This is the third official release.                                                                                                                                                                   |
 |                                   |                                                                                                                                                                                                       |
 |                                   | -  Added section "Glossary".                                                                                                                                                                          |
-|                                   | -  Added section "User Permissions".                                                                                                                                                                  |
+|                                   | -  Added section "User Permissions."                                                                                                                                                                  |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2017-01-20                        | This is the second official release.                                                                                                                                                                  |
 |                                   |                                                                                                                                                                                                       |

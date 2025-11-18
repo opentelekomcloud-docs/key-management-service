@@ -1,44 +1,36 @@
-:original_name: kms_01_0001.html
+:original_name: kms_01_0047.html
 
-.. _kms_01_0001:
+.. _kms_01_0047:
 
 Functions
 =========
 
-KMS is a secure, reliable, and easy-to-use cloud service that helps users create, manage, and protect keys in a centralized manner.
+KMS provides the following functions:
 
-It uses Hardware Security Modules (HSMs) to protect keys. All keys are protected by root keys in HSMs to avoid key leakage. The HSM module meets the FIPS 140-2 Level 3 security requirements.
+-  Manages custom keys.
 
-It also controls access to keys and records all operations on keys with traceable logs. In addition, it provides use records of all keys, meeting your audit and regulatory compliance requirements.
+   You can perform the following operations on custom keys on the KMS console or via APIs:
 
+   -  Creating, querying, enabling, disabling, scheduling the deletion of, and canceling the deletion of custom keys
+   -  Importing keys and deleting key material
+   -  Modifying the name and description of a custom key
+   -  Using the online tool to encrypt and decrypt small-size data
+   -  Creating, querying, and revoking a grant
+   -  Adding, searching for, editing, and deleting tags
+   -  Enabling key rotation
 
-Functions
----------
+-  Creates, encrypts, and decrypts DEKs, and retires a grant on a key.
 
--  On the KMS console, you can:
+   By calling APIs, you can create, encrypt, and decrypt DEKs, and retire a grant on a key. For details, see the *Key Management Service API Reference*.
 
-   -  Create, query, enable, and disable CMKs, as well as schedule and cancel CMK deletion.
-   -  Modify the alias and description of CMKs.
-   -  Use the online tool to encrypt and decrypt small-size data.
-   -  Import keys and delete key material.
-   -  Add, search for, edit, and delete tags.
-   -  Create, cancel, and query grants.
+-  Generates hardware true random numbers.
 
--  You can use the API to perform the following operations:
-
-   -  Create, encrypt, or decrypt DEKs.
-   -  Retire grants.
-
-   For details, see *Key Management Service API Reference*.
-
--  Generate hardware true random numbers.
-
-   You can generate 512-bit hardware true random numbers using a KMS API. The numbers can be used as a basis for key materials or as encryption parameters. For details, see the Key Management Service API Reference.
+   You can generate 512-bit hardware true random numbers using a KMS API. The 512-bit hardware true random numbers can be used as or serve as basis for keys and encryption parameters. For details, see .
 
 Key Algorithms Supported by KMS
 -------------------------------
 
-Symmetric keys created on the KMS console use the AES algorithm. Asymmetric keys created by KMS support the RSAand ECC algorithms.
+Symmetric keys created on the KMS console use the AES-256 algorithm. Asymmetric keys created by KMS support the RSA and ECC algorithms.
 
 .. table:: **Table 1** Key algorithms supported by KMS
 
@@ -54,6 +46,10 @@ Symmetric keys created on the KMS console use the AES algorithm. Asymmetric keys
    |                |                |                    |                                    |                                                                                                                                                                                                                       |
    |                |                |                    |                                    |       You need to call APIs to encrypt and decrypt a large amount of data.                                                                                                                                            |
    +----------------+----------------+--------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Digest key     | SHA            | -  HMAC_256        | Digest key                         | -  Data tampering prevention                                                                                                                                                                                          |
+   |                |                | -  HMAC_384        |                                    | -  Data integrity verification                                                                                                                                                                                        |
+   |                |                | -  HMAC_512        |                                    |                                                                                                                                                                                                                       |
+   +----------------+----------------+--------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Asymmetric key | RSA            | -  RSA_2048        | RSA asymmetric password            | -  Digital signature and signature verification                                                                                                                                                                       |
    |                |                | -  RSA_3072        |                                    | -  Data encryption and decryption                                                                                                                                                                                     |
    |                |                | -  RSA_4096        |                                    |                                                                                                                                                                                                                       |
@@ -65,16 +61,14 @@ Symmetric keys created on the KMS console use the AES algorithm. Asymmetric keys
    |                |                | -  EC_P384         |                                    |                                                                                                                                                                                                                       |
    +----------------+----------------+--------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-:ref:`Table 2 <kms_01_0001__table123192815372>` describes the encryption and decryption algorithms supported for user-imported keys.
+:ref:`Key wrapping algorithms <kms_01_0047__table35495333248>` describes the cryptographic key wrapping algorithms supported by imported keys.
 
-.. _kms_01_0001__table123192815372:
+.. _kms_01_0047__table35495333248:
 
 .. table:: **Table 2** Key wrapping algorithms
 
-   +-----------------------+--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-   | Algorithm             | Description                                                        | Configuration                                                                                                   |
-   +=======================+====================================================================+=================================================================================================================+
-   | RSAES_OAEP_SHA_256    | RSA algorithm that uses OAEP and has the **SHA-256** hash function | Select an algorithm based on your HSM functions.                                                                |
-   |                       |                                                                    |                                                                                                                 |
-   |                       |                                                                    | If your HSM supports the **RSAES_OAEP_SHA_256** algorithm, use **RSAES_OAEP_SHA_256** to encrypt key materials. |
-   +-----------------------+--------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+   +--------------------+----------------------------------------------------------------------------------+-----------------------------------------------------------+
+   | Algorithm          | Description                                                                      | Example Value                                             |
+   +====================+==================================================================================+===========================================================+
+   | RSAES_OAEP_SHA_256 | RSA cryptographic algorithm that uses OAEP and has the **SHA-256** hash function | The **RSAES_OAEP_SHA_256** encryption key is recommended. |
+   +--------------------+----------------------------------------------------------------------------------+-----------------------------------------------------------+

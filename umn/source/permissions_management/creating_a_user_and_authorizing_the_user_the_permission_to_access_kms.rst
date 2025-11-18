@@ -1,6 +1,6 @@
-:original_name: kms_01_0135.html
+:original_name: kms_01_9997.html
 
-.. _kms_01_0135:
+.. _kms_01_9997:
 
 Creating a User and Authorizing the User the Permission to Access KMS
 =====================================================================
@@ -13,7 +13,7 @@ This section describes IAM's fine-grained permissions management for your KMS re
 
 If your account does not need individual IAM users, skip this chapter.
 
-This section describes the procedure for granting permissions (see :ref:`Figure 1 <kms_01_0135__fig23111471897>`).
+This section describes the procedure for granting permissions (see :ref:`Figure 1 <kms_01_9997__en-us_topic_0169425415_fig23111471897>`).
 
 Prerequisites
 -------------
@@ -37,17 +37,36 @@ Before granting permissions to a user group, you need to understand the availabl
 Authorization Process
 ---------------------
 
-.. _kms_01_0135__fig23111471897:
+.. _kms_01_9997__en-us_topic_0169425415_fig23111471897:
 
 .. figure:: /_static/images/en-us_image_0220982951.png
    :alt: **Figure 1** Authorizing the KMS access permission to a user
 
    **Figure 1** Authorizing the KMS access permission to a user
 
-#. .. _kms_01_0135__li960014441019:
+#. .. _kms_01_9997__en-us_topic_0169425415_li960014441019:
 
-   Create a user group on the IAM console and grant the user group the permission (indicating full permissions for keys).
+   Create a user group on the IAM console and grant the user group the **KMS CMKFullAccess** permission (indicating full permissions for keys).
 
-#. Create a user on the IAM console and add the user to the user group created in :ref:`1 <kms_01_0135__li960014441019>`.
+#. Create a user on the IAM console and add the user to the user group created in :ref:`1 <kms_01_9997__en-us_topic_0169425415_li960014441019>`.
 
-#. Log in to the console as newly created user, and verify that the user only has the assigned permissions.
+#. .
+
+   Log in to the console as newly created user, and verify that the user only has the assigned permissions.
+
+Tenant Guest Roles
+------------------
+
+If you have configured Tenant Guest permissions for the IAM account, apart from the read-only permissions for all cloud services except Identity and Access Management (IAM), you also have the following KMS permissions:
+
+-  **kms:cmk:create**: Create a key.
+-  **kms:cmk:createDataKey**: Create a DEK.
+-  **kms:cmk:createDataKeyWithoutPlaintext**: Create a plaintext-free DEK.
+-  **kms:cmk:encryptDataKey**: Encrypt the DEK.
+-  **kms:cmk:decryptDataKey**: Decrypt a DEK.
+-  **kms:cmk:retireGrant**: Retire a grant.
+-  **kms:cmk:decryptData**: Decrypt data.
+-  **kms:cmk:encryptData**: Encrypt data.
+-  **kms::generateRandom**: Generate a random number.
+
+If you want to configure the Tenant Guest role for an IAM user but do not want to have the preceding permissions, you need to configure a custom deny policy for the IAM user. For details about how to configure a custom policy, see :ref:`Creating a Custom KMS Policy <kms_01_9996>`.

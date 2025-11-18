@@ -35,20 +35,20 @@ Procedure
 
 #. Click **Create Key Event Notification** at the upper right corner of the page. The creation page is displayed.
 
-#. In the **Basic Information** area, enter a notification name. See :ref:`Figure 1 <kms_01_0021__en-us_topic_0112947080_fig197519401153>` for details.
+#. In the **Basic Information** area, enter a notification name. See :ref:`Figure 1 <kms_01_0021__fig984215131118>` for details.
 
-   .. _kms_01_0021__en-us_topic_0112947080_fig197519401153:
+   .. _kms_01_0021__fig984215131118:
 
-   .. figure:: /_static/images/en-us_image_0129547803.png
+   .. figure:: /_static/images/en-us_image_0000002172662606.png
       :alt: **Figure 1** Configuring basic information
 
       **Figure 1** Configuring basic information
 
-#. Select operation types in the **Operation** area. See :ref:`Figure 2 <kms_01_0021__en-us_topic_0112947080_fig103085242037>` for details.
+#. Select operation types in the **Operation** area. See :ref:`Figure 2 <kms_01_0021__fig971211561311>` for details.
 
-   .. _kms_01_0021__en-us_topic_0112947080_fig103085242037:
+   .. _kms_01_0021__fig971211561311:
 
-   .. figure:: /_static/images/en-us_image_0000001830825206.png
+   .. figure:: /_static/images/en-us_image_0000002172663278.png
       :alt: **Figure 2** Selecting operation types
 
       **Figure 2** Selecting operation types
@@ -61,28 +61,28 @@ Procedure
       | Operation Type | SMN sends messages to users when deletion, creation, or login operations are performed on keys. | Delete        |
       +----------------+-------------------------------------------------------------------------------------------------+---------------+
 
-#. In the **User** area, specify the user who performs the specified operations. See :ref:`Figure 3 <kms_01_0021__en-us_topic_0112947080_fig58261115592>` for details.
+#. In the **User** area, specify the user who performs the specified operations. See :ref:`Figure 3 <kms_01_0021__fig8856339822>` for details.
 
    .. note::
 
       -  You can select **All users** so that SMN notifications are sent when specified operations are performed by any user.
       -  You can also select **Specified users** and add users to the **User List**. Then SMN notifications are sent when the specified operations are performed by specified users.
 
-   .. _kms_01_0021__en-us_topic_0112947080_fig58261115592:
+   .. _kms_01_0021__fig8856339822:
 
-   .. figure:: /_static/images/en-us_image_0129550097.png
+   .. figure:: /_static/images/en-us_image_0000002208150489.png
       :alt: **Figure 3** Specifying users
 
       **Figure 3** Specifying users
 
-#. In the **Topic** area, configure whether to send notifications. See :ref:`Figure 4 <kms_01_0021__en-us_topic_0112947080_fig14611311075>` for details.
+#. In the **Topic** area, configure whether to send notifications. See :ref:`Figure 4 <kms_01_0021__fig14961315337>` for details.
 
-   .. _kms_01_0021__en-us_topic_0112947080_fig14611311075:
+   .. _kms_01_0021__fig14961315337:
 
-   .. figure:: /_static/images/en-us_image_0129551027.png
-      :alt: **Figure 4** Configuring SMN topic
+   .. figure:: /_static/images/en-us_image_0000002208065393.png
+      :alt: **Figure 4** Configuring SMN
 
-      **Figure 4** Configuring SMN topic
+      **Figure 4** Configuring SMN
 
    .. table:: **Table 2** Parameters for configuring the SMN notification
 

@@ -1,11 +1,11 @@
-:original_name: kms_01_0161.html
+:original_name: kms_01_9996.html
 
-.. _kms_01_0161:
+.. _kms_01_9996:
 
 Creating a Custom KMS Policy
 ============================
 
-Custom policies can be created as a supplement to the system policies of KMS. For details about the actions supported by custom policies, see "Permissions Policies and Supported Actions" in *Key Management Service API Reference*.
+Custom policies can be created as a supplement to the system policies of KMSfilter. For details about the actions supported by custom policies, see "Permissions Policies and Supported Actions" in *Key Management Service API Reference*.
 
 You can create custom policies in either of the following ways:
 
