@@ -1,110 +1,49 @@
-:original_name: kms_01_0016.html
+:original_name: dew_01_0017.html
 
-.. _kms_01_0016:
+.. _dew_01_0017:
 
 Related Services
 ================
 
-OBS
----
 
-Object Storage Service (OBS) is a scalable service that provides secure, reliable, and cost-effective cloud storage for massive amounts of data. KMS provides central management and control capabilities of CMKs for OBS. It is used for server-side encryption with KMS-managed keys (SSE-KMS) on OBS.
+Related Services
+----------------
 
-EVS
----
+KMS provides CMK management and encryption capabilities for cloud services. The following table lists the cloud services that can use KMS for encryption.
 
-Elastic Volume Service (EVS) offers scalable block storage for cloud servers. With high reliability, high performance, and rich specifications, EVS disks can be used for distributed file systems, development and test environments, data warehouse applications, and high-performance computing (HPC) scenarios to meet diverse service requirements. KMS provides central management and control capabilities of CMKs for EVS. It is used for encryption in EVS.
+.. table:: **Table 1** Cloud services supported by KMS
 
-IMS
----
-
-Image Management Service (IMS) allows you to manage the entire lifecycle of your images. KMS provides central management and control capabilities of CMKs for Image Management Service (IMS). It is used for private image encryption in IMS.
-
-SFS
----
-
-Scalable File Service (SFS) provides high-performance file storage (NAS) that can be expanded on demand. KMS provides central management and control capabilities of CMKs for SFS. It is used for file system encryption in SFS.
-
-RDS
----
-
-Relational Database Service (RDS) is a cloud relational database that is reliable, scalable, easy to manage, and immediately ready for use. KMS provides central management and control capabilities of CMKs for RDS. It is used for disk encryption in RDS.
-
-DDS
----
-
-Document Database Service (DDS) is a MongoDB-compatible database service that is secure, highly available, reliable, scalable, and easy to use. It provides DB instance creation, scaling, redundancy, backup, restoration, monitoring, and alarm reporting functions with just a few clicks on the DDS console. KMS provides central management and control capabilities of CMKs for DDS. It is used for disk encryption in DDS.
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+   | Service                           | How to Use                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Reference                                        |
+   +===================================+=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+==================================================+
+   | Object Storage Service (OBS)      | You can upload objects to and download them from OBS in common mode or server-side encryption mode. When you upload objects in encryption mode, data is encrypted at the server side and then securely stored on OBS in ciphertext. When you download encrypted objects, the data in ciphertext is decrypted at the server side and then provided to you in plaintext. OBS supports the server-side encryption with KMS-managed keys (SSE-KMS). In this mode, OBS uses the keys provided by KMS for server-side encryption. | *Object Storage Service Console Operation Guide* |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+   | Elastic Volume Service (EVS)      | If you enable the encryption function when creating an EVS disk, the disk will be encrypted with the DEK generated by using your CMK. Data stored in the EVS disk will be automatically encrypted.                                                                                                                                                                                                                                                                                                                          | *Elastic Volume Service User Guide*              |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+   | Image Management Service (IMS)    | When creating a private image using an external image file, you can enable the private image encryption function and select a CMK provided by KMS to encrypt the image.                                                                                                                                                                                                                                                                                                                                                     | *Image Management Service User Guide*            |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+   | Scalable File Service (SFS)       | When creating a file system on SFS, the CMK provided by KMS can be selected to encrypt the file system, so that files stored in the file system are automatically encrypted.                                                                                                                                                                                                                                                                                                                                                | *Scalable File Service User Guide*               |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+   | Relational Database Service (RDS) | When purchasing a database instance, you can enable the disk encryption function of the database instance and select a CMK created on KMS to encrypt the disk of the database instance. Enabling the disk encryption function will enhance data security.                                                                                                                                                                                                                                                                   | *Relational Database Service User Guide*         |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+   | Document Database Service (DDS)   | When purchasing a DDS instance, you can enable the disk encryption function of the instance and select a CMK created on KMS to encrypt the disk of the instance. Enabling the disk encryption function will enhance data security.                                                                                                                                                                                                                                                                                          | *Document Database Service User Guide*           |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
 
 CTS
 ---
 
-Cloud Trace Service (CTS) provides you with a history of KMS operations. After the CTS service is enabled, you can view all generated traces to review and audit performed KMS operations. For details, see the *Cloud Trace Service User Guide*.
-
-.. table:: **Table 1** KMS operations supported by CTS
-
-   +---------------------------------+---------------+-------------------------------+
-   | Operation                       | Resource Type | Trace Name                    |
-   +=================================+===============+===============================+
-   | Create a key                    | CMK           | createKey                     |
-   +---------------------------------+---------------+-------------------------------+
-   | Create a DEK                    | CMK           | createDataKey                 |
-   +---------------------------------+---------------+-------------------------------+
-   | Create a plaintext-free DEK     | CMK           | createDataKeyWithoutPlaintext |
-   +---------------------------------+---------------+-------------------------------+
-   | Enable a key                    | CMK           | enableKey                     |
-   +---------------------------------+---------------+-------------------------------+
-   | Disable a key                   | CMK           | disableKey                    |
-   +---------------------------------+---------------+-------------------------------+
-   | Encrypt a DEK                   | CMK           | encryptDatakey                |
-   +---------------------------------+---------------+-------------------------------+
-   | Decrypt a DEK                   | CMK           | decryptDatakey                |
-   +---------------------------------+---------------+-------------------------------+
-   | Schedule key deletion           | CMK           | scheduleKeyDeletion           |
-   +---------------------------------+---------------+-------------------------------+
-   | Cancel scheduled key deletion   | CMK           | cancelKeyDeletion             |
-   +---------------------------------+---------------+-------------------------------+
-   | Generate random numbers         | RNG           | genRandom                     |
-   +---------------------------------+---------------+-------------------------------+
-   | Modify a key alias              | CMK           | updateKeyAlias                |
-   +---------------------------------+---------------+-------------------------------+
-   | Modify key description          | CMK           | updateKeyDescription          |
-   +---------------------------------+---------------+-------------------------------+
-   | Prompt risks about CMK deletion | CMK           | deleteKeyRiskTips             |
-   +---------------------------------+---------------+-------------------------------+
-   | Import key materials            | CMK           | importKeyMaterial             |
-   +---------------------------------+---------------+-------------------------------+
-   | Delete key materials            | CMK           | deleteImportedKeyMaterial     |
-   +---------------------------------+---------------+-------------------------------+
-   | Create a grant                  | CMK           | createGrant                   |
-   +---------------------------------+---------------+-------------------------------+
-   | Retire a grant                  | CMK           | retireGrant                   |
-   +---------------------------------+---------------+-------------------------------+
-   | Revoke a grant                  | CMK           | revokeGrant                   |
-   +---------------------------------+---------------+-------------------------------+
-   | Encrypt data                    | CMK           | encryptData                   |
-   +---------------------------------+---------------+-------------------------------+
-   | Decrypt data                    | CMK           | decryptData                   |
-   +---------------------------------+---------------+-------------------------------+
-   | Add a tag                       | CMK           | dealUnifiedTags               |
-   +---------------------------------+---------------+-------------------------------+
-   | Delete a tag                    | CMK           | dealUnifiedTags               |
-   +---------------------------------+---------------+-------------------------------+
-   | Add tags in batches             | CMK           | dealUnifiedTags               |
-   +---------------------------------+---------------+-------------------------------+
-   | Delete tags in batches          | CMK           | dealUnifiedTags               |
-   +---------------------------------+---------------+-------------------------------+
-   | Enable key rotation             | CMK           | enableKeyRotation             |
-   +---------------------------------+---------------+-------------------------------+
-   | Modify key rotation interval    | CMK           | updateKeyRotationInterval     |
-   +---------------------------------+---------------+-------------------------------+
-   | Disable key rotation            | CMK           | disableKeyRotation            |
-   +---------------------------------+---------------+-------------------------------+
+CTS provides you with a history of KMS operations. After the CTS service is enabled, you can view all generated traces to review and audit performed KMS operations. For details, see the *Cloud Trace Service User Guide*.
 
 IAM
 ---
 
-Identity and Access Management (IAM) provides the permission management function for KMS.
+IAM provides permission management for KMS.
 
 Only users who have KMS Administrator permissions can use KMS.
 
-To apply for permissions, contact a user with Security Administrator permissions. For details, see the *Identity and Access Management User Guide*.
+To apply for permissions, contact a user with Security Administrator permissions. For details, see *Identity and Access Management User Guide*.
+
+SMN
+---
+
+Simple Message Notification (SMN) provides the notification function. When a selected event is triggered for the target secret, CSMS sends a notification through SMN.
