@@ -1,10 +1,12 @@
-:original_name: kms_01_0073.html
+:original_name: dew_01_0047.html
 
-.. _kms_01_0073:
+.. _dew_01_0047:
 
 What Is Key Management Service?
 ===============================
 
-Key Management Service (KMS) is a secure, reliable, and easy-to-use service that helps users centrally manage and safeguard their Customer Master Keys (CMKs).
+KMS is a secure, reliable, and easy-to-use cloud service that helps users create, manage, and protect keys in a centralized manner.
 
-This service uses hardware security modules (HSMs) to protect CMKs. HSMs help you create and control CMKs with ease. All CMKs are protected by root keys in HSMs to avoid leakage caused by human error. KMS implements access control and log-based tracking on all operations involving CMKs. Additionally, it provides CMK operation records, meeting your audit and regulatory compliance requirements.
+It uses Hardware Security Modules (HSMs) to protect keys. All keys are protected by root keys in HSMs to avoid key leakage. The HSMs meet the FIPS 140-2 Level 3 security requirements.
+
+It also controls access to keys and records all operations on keys with traceable logs. In addition, it provides use records of all keys, meeting your audit and regulatory compliance requirements.

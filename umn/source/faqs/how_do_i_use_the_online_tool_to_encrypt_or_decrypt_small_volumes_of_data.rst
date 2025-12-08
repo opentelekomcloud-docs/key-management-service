@@ -1,6 +1,6 @@
-:original_name: kms_01_0107.html
+:original_name: dew_01_0060.html
 
-.. _kms_01_0107:
+.. _dew_01_0060:
 
 How Do I Use the Online Tool to Encrypt or Decrypt Small Volumes of Data?
 =========================================================================
@@ -14,57 +14,67 @@ Encrypting Data
 
 #. Click |image1| in the upper left corner of the management console and select a region or project.
 
-#. Choose **Security** > **Key Management Service** . The key management page is displayed.
+#. Click |image2| on the left and choose **Security** > **Key Management Service**.
 
 #. Click the name of the target custom key to access the key details page. Click the **Tool** tab.
 
-#. Click **Encrypt**. In the text box on the left, enter the data to be encrypted.
+#. Click **Encrypt**. In the text box on the left, enter the data to be encrypted, as shown in :ref:`Figure 1 <dew_01_0060__dew_01_0022_fig61927028183617>`.
 
+   .. _dew_01_0060__dew_01_0022_fig61927028183617:
 
-   .. figure:: /_static/images/en-us_image_0000002255480681.png
+   .. figure:: /_static/images/en-us_image_0000001629601212.png
       :alt: **Figure 1** Encrypting data
 
       **Figure 1** Encrypting data
 
-#. Click **Execute**. The data encryption result is displayed in the text box on the right.
+#. Click **Execute**. Ciphertext of the data is displayed in the text box on the right.
 
    .. note::
 
-      -  The key you clicked is used for encryption.
+      -  Use the current CMK to encrypt the data.
       -  To clear your input, click **Clear**.
       -  To copy the encrypted data, click **Copy to Clipboard**. You can then paste and save it to a local file.
+
+.. note::
+
+   Enter the plaintext on the console, the text will be encoded to Base64 format before encryption.
+
+   The decryption result returned via API will be in Base64 format. Perform Base64 decoding to obtain the plaintext entered on the console.
 
 Decrypting Data
 ---------------
 
 #. Log in to the management console.
+#. Click |image3| in the upper left corner of the management console and select a region or project.
+#. Click |image4| on the left and choose **Security** > **Key Management Service**.
 
-#. Click |image2| in the upper left corner of the management console and select a region or project.
+4. You can click any non-default key in **Enabled** status to go to the encryption and decryption page of the online tool.
 
-#. Choose **Security** > **Key Management Service** . The key management page is displayed.
-
-#. Click the alias of an enabled key (excepting Default Master Keys) to access its details page.
-
-#. Click the **Tool** tab.
-
-#. Click **Decrypt**. In the text box on the left, enter the data to be decrypted.
+5. Click **Decrypt** and enter the data to be decrypted in the text box, as shown in :ref:`Figure 2 <dew_01_0060__dew_01_0022_fig1586514341014>`.
 
    .. note::
 
-      -  The online tool automatically identifies the key used for data encryption, and uses it to decrypt data.
+      -  The tool will identify the original encryption CMK and use it to decrypt the data.
       -  If the key has been deleted, the decryption will fail.
 
+   .. _dew_01_0060__dew_01_0022_fig1586514341014:
 
-   .. figure:: /_static/images/en-us_image_0000002220522126.png
+   .. figure:: /_static/images/en-us_image_0000001629122164.png
       :alt: **Figure 2** Decrypting data
 
       **Figure 2** Decrypting data
 
-#. Click **Execute**. The data decryption result is displayed in plaintext in the text box on the right.
+6. Click **Execute**. Plaintext of the data is displayed in the text box on the right.
 
    .. note::
 
-      To copy the decrypted data, click **Copy to Clipboard**. You can then paste and save it to a local file.
+      -  You can click **Copy to Clipboard** to copy the plaintext and save it in a local file.
 
-.. |image1| image:: /_static/images/en-us_image_0237800345.png
-.. |image2| image:: /_static/images/en-us_image_0237800345.png
+      -  Enter the plaintext on the console, the text will be encoded to Base64 format before encryption.
+
+         The decryption result returned via API will be in Base64 format. Perform Base64 decoding to obtain the plaintext entered on the console.
+
+.. |image1| image:: /_static/images/en-us_image_0000001284811084.png
+.. |image2| image:: /_static/images/en-us_image_0000002511598247.png
+.. |image3| image:: /_static/images/en-us_image_0000001284811084.png
+.. |image4| image:: /_static/images/en-us_image_0000002511605033.png

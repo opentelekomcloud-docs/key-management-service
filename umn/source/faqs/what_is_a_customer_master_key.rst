@@ -1,11 +1,11 @@
-:original_name: kms_01_0074.html
+:original_name: dew_01_0044.html
 
-.. _kms_01_0074:
+.. _dew_01_0044:
 
 What Is a Customer Master Key?
 ==============================
 
-A Customer Master Key (CMK) is a Key Encryption Key (KEK) created by a user using KMS. It is used to encrypt and protect Data Encryption Keys (DEKs). One CMK can be used to encrypt one or multiple DEKs.
+A Customer Master Key (CMK) is a Key Encryption Key (KEK) created by a user on KMS. It is used to encrypt and protect DEKs. One CMK can be used to encrypt one or more DEKs.
 
 CMKs are categorized into custom keys and default keys.
 
@@ -15,17 +15,19 @@ CMKs are categorized into custom keys and default keys.
 
 -  Default keys
 
-   When a user uses KMS for encryption in a cloud service for the first time, the cloud service automatically creates a key whose name ends with **/default**.
+   When a user uses KMS for encryption in a cloud service for the first time, the cloud service automatically creates a key with the alias suffix **/default**.
 
-   On the KMS console, you can query Default Master Keys, but can neither disable them nor schedule their deletion.
+   You can use the management console to query but cannot disable or schedule the deletion of Default Master Keys.
 
-   .. table:: **Table 1** Default Master Keys
+   .. table:: **Table 1** Default master keys
 
-      =========== ==============================
-      Key Name    Cloud Service
-      =========== ==============================
+      =========== =================================
+      Alias       Cloud Service
+      =========== =================================
       obs/default Object Storage Service (OBS)
       evs/default Elastic Volume Service (EVS)
       ims/default Image Management Service (IMS)
       sfs/default Scalable File Service (SFS)
-      =========== ==============================
+      rds/default Relational Database Service (RDS)
+      dds/default Document Database Service (DDS)
+      =========== =================================
