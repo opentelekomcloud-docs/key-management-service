@@ -8,7 +8,7 @@ Obtaining a Project ID
 Obtaining a Project ID from the Console
 ---------------------------------------
 
-A project ID is required for some URLs when an API is called. To obtain a project ID, perform the following operations:
+A project ID is required for some URLs when an API is called. To obtain a project ID, perform the following steps:
 
 #. Log in to the management console.
 

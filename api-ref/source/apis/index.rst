@@ -5,10 +5,10 @@
 APIs
 ====
 
--  :ref:`CMK Management <kms_02_0011>`
+-  :ref:`Key Management Service <kms_02_1010>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   cmk_management/index
+   key_management_service/index
