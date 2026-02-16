@@ -26,7 +26,7 @@ You can use system-defined policies provided in IAM, or create custom policies t
 -  APIs: REST APIs that can be called in a custom policy.
 -  Actions: Added to a custom policy to control permissions for specific operations.
 -  Dependent actions: When assigning an action to users, you also need to assign dependent permissions for that action to take effect.
--  IAM projects or enterprise project: Scope of users a permission is granted to. Policies that contain actions supporting both IAM and enterprise projects can be assigned to user groups and take effect in both IAM and Enterprise Management. Policies that only contain actions supporting IAM projects can be assigned to user groups and only take effect in IAM. Such policies will not take effect if they are assigned to user groups in Enterprise Project.
+-  IAM projects/Enterprise projects: the authorization scope of a custom policy. A custom policy can be applied to IAM projects or enterprise projects or both. Policies that contain actions supporting both IAM and enterprise projects can be assigned to user groups and take effect in both IAM and Enterprise Management. Policies that only contain actions supporting IAM projects can be assigned to user groups and only take effect in IAM. Such policies will not take effect if they are assigned to user groups in Enterprise Project.
 
    .. note::
 
