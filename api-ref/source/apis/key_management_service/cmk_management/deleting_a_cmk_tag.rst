@@ -52,7 +52,7 @@ None
 Examples
 --------
 
-In the **0d0466b0e7274d9cb35df84bb474a37f** project, delete the tag whose key value is **testKey** from the **0d0466b0e7274d9cb35df84bb474a37f** key.
+In the **0d0466b0e7274d9cb35df84bb474a37f** project, delete the tag whose key value is **testKey** from the **bb6a3d22-dc93-47ac-b5bd-88df7ad35f1e** key.
 
 -  Request example
 
