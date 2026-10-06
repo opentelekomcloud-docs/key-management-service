@@ -5,7 +5,7 @@
 Auditing Logs
 =============
 
--  :ref:`Operations supported by CTS <dew_01_0020>`
+-  :ref:`Operations Supported by CTS <dew_01_0020>`
 -  :ref:`Viewing CTS Traces in the Trace List <dew_01_0331>`
 
 .. toctree::

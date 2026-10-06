@@ -24,7 +24,7 @@ Functions
    -  Add, search for, edit, and delete tags.
    -  Create, cancel, and query grants.
 
--  You can use the API to perform the following operations:
+-  You can use the APIs to:
 
    -  Create, encrypt, or decrypt DEKs.
    -  Retire grants.
@@ -46,7 +46,7 @@ Symmetric keys created on the KMS console use AES algorithms. Asymmetric keys cr
    | Key Type       | Algorithm Type | Key Specifications | Description                        | Application Scenario                                                                                                                                                                                                  |
    +================+================+====================+====================================+=======================================================================================================================================================================================================================+
    | Symmetric key  | AES            | AES_256            | AES symmetric key                  | -  Data encryption and decryption                                                                                                                                                                                     |
-   |                |                |                    |                                    | -  DEKs encryption and decryption                                                                                                                                                                                     |
+   |                |                |                    |                                    | -  DEK encryption and decryption                                                                                                                                                                                      |
    |                |                |                    |                                    |                                                                                                                                                                                                                       |
    |                |                |                    |                                    |    .. note::                                                                                                                                                                                                          |
    |                |                |                    |                                    |                                                                                                                                                                                                                       |
@@ -67,6 +67,8 @@ Symmetric keys created on the KMS console use AES algorithms. Asymmetric keys cr
    +----------------+----------------+--------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    |                | ECC            | -  EC_P256         | Elliptic curve recommended by NIST | Digital signature and signature verification                                                                                                                                                                          |
    |                |                | -  EC_P384         |                                    |                                                                                                                                                                                                                       |
+   +----------------+----------------+--------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Asymmetric key | SECP256K1      | SECP256K1          | Elliptic curve cryptography (ECC)  | Digital signature and signature verification                                                                                                                                                                          |
    +----------------+----------------+--------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The following table lists the key wrapping encryption and decryption algorithms supported by imported keys.

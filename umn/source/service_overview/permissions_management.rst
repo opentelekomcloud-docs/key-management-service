@@ -5,14 +5,14 @@
 Permissions Management
 ======================
 
-If you want to assign different access permissions to employees in an enterprise for the DEW resources purchased on the cloud platform, you can use Identity and Access Management (IAM) to perform refined permission management. IAM provides identity authentication, permissions management, and access control, helping you secure access to your resources.
+If you want to assign different access permissions to employees in an enterprise for the DEW resources purchased on the cloud platform, you can use Identity and Access Management (IAM) to perform refined permission management. IAM provides identity authentication, permissions management, and access control, helping you securely access your cloud service resources.
 
 With IAM, you can use your account to create IAM users for your employees, and grant permissions to control their access to specific resource types. For example, some software developers in your enterprise need to use DEW resources but must not delete them or perform any high-risk operations. To achieve this result, you can create IAM users for the software developers and grant them only the permissions required for using DEW resources.
 
 If the system account has met your requirements and you do not need to create an independent IAM user for permission control, then you can skip this section. This will not affect other functions of DEW.
 
-Permissions
------------
+DEW Permissions
+---------------
 
 By default, new IAM users do not have permissions assigned. You need to add a user to one or more groups, and attach permissions policies or roles to these groups. Users inherit permissions from their groups and can perform specified operations on cloud services based on the permissions.
 
@@ -27,7 +27,7 @@ For details, see :ref:`Table 1 <dew_01_0018__table123532558115>`.
 
 .. _dew_01_0018__table123532558115:
 
-.. table:: **Table 1** DEW permissions
+.. table:: **Table 1** System-defined roles and policies supported by KMS
 
    +-----------------------+--------------------------------------------------+--------+
    | Role/Policy           | Description                                      | Type   |
