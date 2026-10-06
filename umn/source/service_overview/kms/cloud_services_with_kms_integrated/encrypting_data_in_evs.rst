@@ -5,7 +5,7 @@
 Encrypting Data in EVS
 ======================
 
--  When purchasing a disk, you can choose **Advanced Settings** > **Encryption** to encrypt the disk using the key provided by KMS. For details, see :ref:`Figure 1 <dew_01_0008__en-us_topic_0000002247169038_fig1372118163416>`. For more information about EVS, see *Elastic Volume Service User Guide*.
+-  When purchasing a disk, you can choose **Advanced Settings** > **Encryption** to encrypt the disk using the key provided by KMS, as shown in :ref:`Figure 1 <dew_01_0008__en-us_topic_0000002247169038_fig1372118163416>`. For more information about EVS, see *Elastic Volume Service User Guide*.
 
    .. note::
 
