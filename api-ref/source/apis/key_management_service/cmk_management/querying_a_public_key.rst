@@ -25,7 +25,7 @@ POST /v1.0/{project_id}/kms/get-publickey
    ========== ========= ====== ===========
    Parameter  Mandatory Type   Description
    ========== ========= ====== ===========
-   project_id Yes       String Project ID
+   project_id Yes       String Project ID.
    ========== ========= ====== ===========
 
 Request Parameters
@@ -40,7 +40,7 @@ Request Parameters
    |                 |                 |                 |                                                                                                                                            |
    |                 |                 |                 | It can be obtained by calling the IAM API used to obtain a user token. The value of **X-Subject-Token** in the response header is a token. |
    +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-   | Content-Type    | Yes             | String          | application/json                                                                                                                           |
+   | Content-Type    | Yes             | String          | Application/JSON                                                                                                                           |
    +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 3** Request body parameters
@@ -62,8 +62,6 @@ Request Parameters
 Response Parameters
 -------------------
 
-**Status code: 200**
-
 .. table:: **Table 4** Response body parameters
 
    ========== ====== ======================
@@ -72,139 +70,6 @@ Response Parameters
    key_id     String Key ID
    public_key String Public key information
    ========== ====== ======================
-
-**Status code: 400**
-
-.. table:: **Table 5** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 6** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 401**
-
-.. table:: **Table 7** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 8** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 403**
-
-.. table:: **Table 9** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 10** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 404**
-
-.. table:: **Table 11** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 12** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 500**
-
-.. table:: **Table 13** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 14** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 502**
-
-.. table:: **Table 15** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 16** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 504**
-
-.. table:: **Table 17** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 18** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
 
 Example Request
 ---------------
@@ -234,22 +99,8 @@ Request succeeded.
 Status Codes
 ------------
 
-+-------------+---------------------------------------------------------------------------------------------------+
-| Status Code | Description                                                                                       |
-+=============+===================================================================================================+
-| 200         | Request succeeded.                                                                                |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 400         | Invalid request parameters.                                                                       |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 401         | Username and password are required for the requested page.                                        |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 403         | Authentication failed.                                                                            |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 404         | The requested resource does not exist.                                                            |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 500         | Internal service error.                                                                           |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 502         | Failed to complete the request. The server receives an invalid response from the upstream server. |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 504         | Gateway timed out.                                                                                |
-+-------------+---------------------------------------------------------------------------------------------------+
+=========== ====== ==================
+Status Code Status Description
+=========== ====== ==================
+200         OK     Request succeeded.
+=========== ====== ==================

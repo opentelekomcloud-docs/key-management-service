@@ -5,7 +5,7 @@
 Introduction
 ============
 
-This chapter describes fine-grained permissions management for your KMS. If your account does not need individual IAM users, you may skip over this chapter.
+This chapter describes fine-grained permissions management for your DEW. If your account does not need individual IAM users, you may skip over this chapter.
 
 By default, new IAM users do not have permissions assigned. You need to add a user to one or more groups, and attach permissions policies or roles to these groups. Users inherit permissions from the groups to which they are added and can perform specified operations on cloud services based on the permissions.
 
@@ -32,6 +32,6 @@ You can use system-defined policies provided in IAM, or create custom policies t
 
       Y: supported; x: not supported
 
-KMS supports the following actions that can be defined in custom policies:
+DEW supports the following actions that can be defined in custom policies:
 
-:ref:`Manage keys <kms_02_0309>`, such as creating keys and querying keys.
+:ref:`Manage keys <kms_02_0309>`, such as creating keys, querying keys, and creating grants.
