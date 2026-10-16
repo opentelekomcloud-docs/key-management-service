@@ -83,8 +83,6 @@ Request Parameters
 Response Parameters
 -------------------
 
-**Status code: 200**
-
 .. table:: **Table 4** Response body parameters
 
    +-----------------+--------+-------------------------------------------------------------------------------------------+
@@ -94,139 +92,6 @@ Response Parameters
    +-----------------+--------+-------------------------------------------------------------------------------------------+
    | signature_valid | String | Whether the signature is valid. Its value can be **true** (valid) or **false** (invalid). |
    +-----------------+--------+-------------------------------------------------------------------------------------------+
-
-**Status code: 400**
-
-.. table:: **Table 5** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 6** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 401**
-
-.. table:: **Table 7** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 8** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 403**
-
-.. table:: **Table 9** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 10** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 404**
-
-.. table:: **Table 11** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 12** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 500**
-
-.. table:: **Table 13** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 14** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 502**
-
-.. table:: **Table 15** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 16** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
-
-**Status code: 504**
-
-.. table:: **Table 17** Response body parameter
-
-   ========= ====== =============
-   Parameter Type   Description
-   ========= ====== =============
-   error     Object Error message
-   ========= ====== =============
-
-.. table:: **Table 18** ErrorDetail
-
-   ========== ====== =================
-   Parameter  Type   Description
-   ========== ====== =================
-   error_code String Error code
-   error_msg  String Error information
-   ========== ====== =================
 
 Example Request
 ---------------
@@ -257,22 +122,8 @@ The request has succeeded.
 Status Codes
 ------------
 
-+-------------+---------------------------------------------------------------------------------------------------+
-| Status Code | Description                                                                                       |
-+=============+===================================================================================================+
-| 200         | The request has succeeded.                                                                        |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 400         | Invalid request parameters.                                                                       |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 401         | Username and password are required to access the page requested.                                  |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 403         | Authentication failed.                                                                            |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 404         | The requested resource does not exist or is not found.                                            |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 500         | Internal service error.                                                                           |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 502         | Failed to complete the request. The server receives an invalid response from the upstream server. |
-+-------------+---------------------------------------------------------------------------------------------------+
-| 504         | Gateway timed out.                                                                                |
-+-------------+---------------------------------------------------------------------------------------------------+
+=========== ====== ==================
+Status Code Status Description
+=========== ====== ==================
+200         OK     Request succeeded.
+=========== ====== ==================
