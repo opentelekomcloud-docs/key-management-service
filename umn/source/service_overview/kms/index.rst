@@ -9,7 +9,7 @@ KMS
 -  :ref:`Advantages <dew_01_0115>`
 -  :ref:`Application Scenarios <dew_01_0006>`
 -  :ref:`Using KMS for Encryption <dew_01_0016>`
--  :ref:`Cloud Services with KMS Integrated <en-us_topic_0000002248485012>`
+-  :ref:`Cloud Services with KMS Integrated <dew_01_0106>`
 
 .. toctree::
    :maxdepth: 1

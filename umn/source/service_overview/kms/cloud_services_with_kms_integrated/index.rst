@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000002248485012.html
+:original_name: dew_01_0106.html
 
-.. _en-us_topic_0000002248485012:
+.. _dew_01_0106:
 
 Cloud Services with KMS Integrated
 ==================================

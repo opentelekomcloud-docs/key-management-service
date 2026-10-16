@@ -2,7 +2,7 @@
 
 .. _dew_01_0020:
 
-Operations supported by CTS
+Operations Supported by CTS
 ===========================
 
 The tables in this section describe the operations supported by CTS.

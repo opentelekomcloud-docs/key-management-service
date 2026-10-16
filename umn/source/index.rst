@@ -6,7 +6,8 @@ Key Management Service - User Guide
    :maxdepth: 1
 
    service_overview/index
-   key_management_service/index
+   kms/index
+   csms/index
    auditing_logs/index
    permission_control/index
    faqs/index

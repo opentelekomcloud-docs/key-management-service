@@ -18,9 +18,9 @@ This section describes the procedure for granting permissions (see :ref:`Figure 
 Prerequisites
 -------------
 
-Before granting permissions to a user group, you need to understand the available DEW permissions, and grant permissions based on the real-life scenario. The following tables describe the permissions supported in DEW.
+Before granting permissions to a user group, you need to understand the available DEW permissions, and grant permissions based on the real-life scenario. The tables below describe the permissions supported in DEW.
 
-.. table:: **Table 1** DEW permissions
+.. table:: **Table 1** System-defined roles and policies supported by KMS
 
    +-----------------------+--------------------------------------------------+--------+
    | Role/Policy           | Description                                      | Type   |
@@ -61,7 +61,7 @@ Authorization Process
 Tenant Guest Roles
 ------------------
 
-If you have configured Tenant Guest permissions for the IAM account, apart from the read-only permissions for all cloud services except Identity and Access Management (IAM), you also have the following KMS permissions:
+If you have configured Tenant Guest permissions for the IAM account, apart from the read-only permissions for all cloud services except IAM, you also have the following KMS permissions:
 
 -  **kms:cmk:create**: Create a key.
 -  **kms:cmk:createDataKey**: Create a DEK.

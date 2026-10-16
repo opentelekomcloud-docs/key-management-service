@@ -22,7 +22,7 @@ Viewing Traces in CTS
 
 #. In the navigation pane on the left, choose **Trace List**.
 
-#. In the upper right corner of the page, set a desired query time range: **Last 1 hour**, **Last 1 day**, or **Last 1 week**. You can also click **Customize** to specify a custom time range within the last seven days.
+#. In the upper right corner of the page, set a desired query time range: **Last 1 hour**, **Last 1 day**, or **Last 1 week**. You can also click **Customize** to specify a custom time range within the last 7 days.
 
 #. Set filters to search for your desired traces, as shown in :ref:`Figure 1 <dew_01_0331__en-us_topic_0000001784562997_en-us_topic_0179639644_fig139361441134311>`.
 
@@ -47,7 +47,7 @@ Viewing Traces in CTS
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Resource Type                     | Select the type of the resource involved in a trace from the drop-down list.                                                                                                          |
       |                                   |                                                                                                                                                                                       |
-      |                                   | For details about the resource types of each cloud service, see section "Supported Services and Operations" in the *Cloud Trace Service User Guide*.                                  |
+      |                                   | For details about the resource types of each cloud service, see section "Supported Services and Operations" in *Cloud Trace Service User Guide*.                                      |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Search By                         | Select one of the following options:                                                                                                                                                  |
       |                                   |                                                                                                                                                                                       |

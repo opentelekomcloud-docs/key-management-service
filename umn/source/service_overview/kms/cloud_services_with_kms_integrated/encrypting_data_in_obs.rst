@@ -5,7 +5,7 @@
 Encrypting Data in OBS
 ======================
 
--  When using OBS to upload data with server-side encryption, you can select **SEE-KMS encryption** and use the key provided by KMS to encrypt the files to be uploaded, as shown in :ref:`Figure 1 <dew_01_0007__en-us_topic_0000002247328838_fig1096125520374>`. For details, see *Object Storage Service Console Operation Guide*.
+-  When using OBS to upload data with server-side encryption, you can select **SEE-KMS encryption** and use the key provided by KMS to encrypt the files to be uploaded, as shown in :ref:`Figure 1 <dew_01_0007__en-us_topic_0000002247328838_fig1096125520374>`. For details, see *Object Storage Service (OBS) User Guide*.
 
    .. _dew_01_0007__en-us_topic_0000002247328838_fig1096125520374:
 
